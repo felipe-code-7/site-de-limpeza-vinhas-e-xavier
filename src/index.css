@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", sans-serif;
+  --font-display: "DM Serif Display", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #f7faf9;
+  font-family: "Manrope", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+a,
+input,
+textarea {
+  outline: none;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  box-shadow: 0 0 0 3px rgba(157, 197, 191, 0.65);
+}
+
+.hero-overlay {
+  background:
+    linear-gradient(90deg, rgba(6, 47, 50, 0.93) 0%, rgba(7, 54, 57, 0.72) 42%, rgba(7, 52, 54, 0.12) 78%),
+    linear-gradient(0deg, rgba(7, 46, 48, 0.44) 0%, transparent 38%);
+}
+
+.eyebrow {
+  color: #4f7f7b;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.form-input {
+  width: 100%;
+  border: 1px solid #cddcd9;
+  border-radius: 0.9rem;
+  background: white;
+  padding: 0.9rem 1rem;
+  color: #153c3e;
+  font-size: 0.9rem;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.form-input::placeholder {
+  color: #94a6a4;
+}
+
+.form-input:focus {
+  border-color: #39726f;
+  box-shadow: 0 0 0 3px rgba(57, 114, 111, 0.1);
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .hero-overlay {
+    background:
+      linear-gradient(90deg, rgba(6, 47, 50, 0.92), rgba(7, 54, 57, 0.48)),
+      linear-gradient(0deg, rgba(7, 46, 48, 0.62), transparent 50%);
+  }
+}
+
+::selection {
+  background: #b9d9d3;
+  color: #103f42;
+}

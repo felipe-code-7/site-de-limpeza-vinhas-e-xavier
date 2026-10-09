@@ -1,0 +1,10 @@
+{
+  "description": "Effortlessly schedule professional cleaning services with a user-friendly interface that connects directly to WhatsApp for quick bookings.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
