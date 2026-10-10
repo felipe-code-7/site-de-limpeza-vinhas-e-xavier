@@ -10,10 +10,10 @@ type Service = {
 type Period = "Manhã" | "Tarde";
 
 const services: Service[] = [
-  { id: "apt-rooms", name: "Apartamento", detail: "3 cômodos", price: 220 },
-  { id: "apt-bedrooms", name: "Apartamento", detail: "3 quartos", price: 250 },
-  { id: "house-rooms", name: "Casa", detail: "3 cômodos", price: 260 },
-  { id: "large", name: "Grande andar / Sítio", detail: "Ambientes amplos", price: 350 },
+  { id: "apt-rooms", name: "Apartamento", detail: "1 banheiro ", price: 220 },
+  { id: "apt-bedrooms", name: "Apartamento", detail: "2 banheiros", price: 250 },
+  { id: "house-rooms", name: "pós obra", detail: "", price: 320 },
+  { id: "large", name: "casa dois andar / Sítio", detail: "Ambientes amplos", price: 350 },
 ];
 
 const periods: { label: Period; time: string }[] = [
