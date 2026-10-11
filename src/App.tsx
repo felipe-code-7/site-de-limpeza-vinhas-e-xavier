@@ -17,8 +17,8 @@ const services: Service[] = [
 ];
 
 const periods: { label: Period; time: string }[] = [
-  { label: "Manhã", time: "08h às 12h" },
-  { label: "Tarde", time: "13h às 18h" },
+  { label: "Manhã", time: "08h às 13h" },
+  { label: "Tarde", time: "13;30h às 18h" },
 ];
 
 const heroImage =
